@@ -140,3 +140,7 @@ body{
     color: white;
     font-weight: 700;
 }
+
+.logo {
+    height: 4rem;
+}
