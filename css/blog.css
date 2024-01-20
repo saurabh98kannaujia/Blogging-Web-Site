@@ -1,7 +1,24 @@
-.blog, .article{
+
+:root {
+    --heading: rgb(0 10 45);
+    --para: #777777;
+    --para-tint: #e4e4e4;
+    --third: #FFFFFF;
+    --helper: #8490ff;
+    --helper-tint: #f3f4ff;
+    --light-grey: #adadad --bg: rgb(249 249 255);
+    --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    --main-section-background: linear-gradient(180deg, #fafafa 20%, #fafafa 100%);
+}
+
+
+.article{
     position: relative;
     height: fit-content;
     padding-bottom: 0;
+    margin-top: 3rem;
+    text-align: start;
 }
 
 .article, .title{
@@ -10,7 +27,10 @@
     padding: 0 10px;
     white-space: normal;
 }
-
+.subtitle {
+    margin-top: 1rem;
+    padding: 0 10px;
+}
 .published{
     margin: 20px 0 60px;
     padding: 0 10px;
@@ -25,7 +45,7 @@
 }
 
 .article *{
-    margin: 30px 0;
+    margin: 10px 0;
     color: #2d2d2d;
 }
 
@@ -44,3 +64,65 @@
     font-size: 40px;
     margin-top: 80px;
 }
+.blog-content-container {
+    margin: 0rem 13rem;
+    padding: 3rem 4rem;
+    box-shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    border-radius: 5px;
+    background-color: var(--third);
+    text-align: center;
+}
+.section-image {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-image img{
+    width: 90%;
+}
+.detailed_blog {
+    text-align: start;
+    margin-top: 2.5rem;
+}
+
+.code-container {
+    position: relative;
+    /* max-width: 600px; */
+    width: 100%;
+    background-color: #8588d9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  code {
+    display: block;
+    white-space: pre-wrap;
+  }
+
+  #codeSnippet {
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  @media screen and (width:1024px) {
+    .blog-content-container {
+        margin: 0rem 1rem;
+        padding: 2rem 1rem;
+    }
+  }

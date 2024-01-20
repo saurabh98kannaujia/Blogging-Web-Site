@@ -99,6 +99,12 @@ body{
     grid-gap: 80px;
     /* justify-content: space-between; */
 }
+.blog-card {
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 0px 7px -1px #1b1b1b;
+    border: #1b1b1b;
+}
 
 .blog-image{
     width: 100%;
