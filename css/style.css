@@ -51,6 +51,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .content{
@@ -127,6 +128,9 @@ body{
 @media screen and (max-width:1024px) {
     .blogs-section {
         grid-template-columns: 1fr;
+    }
+    .blogs-section {
+        padding: 0;
     }
     
 }
