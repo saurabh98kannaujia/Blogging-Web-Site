@@ -1,99 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gyaan Explosion</title>
-    <link rel="icon" href="img/logo.ico">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="google-adsense-account" content="ca-pub-4481976863720472">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Gyaan Explosion</title>
+  <link rel="icon" href="/assets/images/logo.ico">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/home.css">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
 
 </head>
+
 <body>
-    <div class="main">
-        <nav class="navbar">
-            <img src="img/logo.png" class="logo" alt="">
-            <ul class="links-container">
-                <li class="link-item"><a href="/" class="link">home</a></li>
-                <!-- <li class="link-item"><a href="/blog.html" class="link">category</a></li> -->
-                <!-- <li class="link-item"><a href="/blog.html" class="link">contact</a></li> -->
-    
-            </ul>
+
+ <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav">
+          <!-- ***** Logo Start ***** -->
+          <a href="index.html" class="logo">
+            <img src="/assets/images/logo.png" alt="Gyan Explosion">
+          </a>
+          <!-- ***** Logo End ***** -->
+          <!-- ***** Menu Start ***** -->
+          <ul class="nav">
+            <li class="scroll-to-section"><a href="/index.html" class="active">Home</a></li>
+            <li class="scroll-to-section"><a href="/blog.html" >Blog</a></li>
+            <li class="scroll-to-section"><a href="about.html">About</a></li>
+            <li class="scroll-to-section"><a href="contact.html">Contact</a></li>
+
+            <!-- <li class="scroll-to-section"><a href="">Contact</a></li>  -->
+            <!-- <li class="scroll-to-section"><div class="border-first-button"><a href="#contact">Free Quote</a></div></li>  -->
+          </ul>
+          <a class='menu-trigger'>
+            <span>Menu</span>
+          </a>
+          <!-- ***** Menu End ***** -->
         </nav>
-    
-        <header class="header">
-            <div class="content">
-                <h1 class="heading">
-                    <!-- <span class="small">welcome in the world of</span> -->
-                    Gyaan
-                    <span class="no-fill">Explosion</span>
-                </h1>
-                <!-- <a href="/editor" class="btn">write a blog</a> -->
-            </div>
-        </header>
-        
-        <!-- blog section -->
-
-        <div class="main-blog">
-            <section class="filter">
-                <p class="blog-overviews">Category:</p>
-                <a href="/" class="btn dark">Devops</a>
-                <!-- <a href="/finance.html" class="btn dark">Stock Market</a> -->
-            </section>
-            <section class="blogs-section">
-                <div class="blog-card">
-                    <img src="img/devops/jenkins/jenkins.png" class="blog-image" alt="">
-                    <h1 class="blog-title">What is jenkins and how to setup ?</h1>
-                    <p class="blog-overview">Jenkins CI/CD pipeline is a crucial component in the realm of DevOps, where CI stands for Continuous Integration and CD encompasses Continuous Deployment.</p>
-                    <a href="/devops/jenkins.html" class="btn dark">read</a>
-                </div>
-                <!-- <div class="blog-card">
-                    <img src="img/header.png" class="blog-image" alt="">
-                    <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-                    <a href="/" class="btn dark">read</a>
-                </div>
-                <div class="blog-card">
-                    <img src="img/header.png" class="blog-image" alt="">
-                    <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-                    <a href="/" class="btn dark">read</a>
-                </div>
-                <div class="blog-card">
-                    <img src="img/header.png" class="blog-image" alt="">
-                    <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-                    <a href="/" class="btn dark">read</a>
-                </div>
-                <div class="blog-card">
-                    <img src="img/header.png" class="blog-image" alt="">
-                    <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-                    <a href="/" class="btn dark">read</a>
-                </div> -->
-            </section>
-        </div>
-        
+      </div>
     </div>
-    
+  </div>
+</header>
+<!-- ***** Header Area End ***** -->
 
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h6>Hi, I am</h6>
+                    <h2>Saurabh Kannaujia</h2>
+                    <p>Welcome to Gyaan Explosion Tech Insights, where I share my personal journey, discoveries, and deep dives into the world of technology. 
+                      This platform serves as a digital canvas where I paint the picture of my experiences, insights, and technical know-how.</p>
+                  </div>
+                  <!-- <div class="col-lg-12">
+                    <div class="border-first-button scroll-to-section">
+                      <a href="#contact">Free Quote</a>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/about-dec-v3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="js/firebase.js"></script>
-    <script src="js/home.js"></script>
+  <!-- <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h6>Our Services</h6>
+            <h4>What we <em>Provides</em></h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
+                        Web Development
+                      </div>
+                    </div>
+                     <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/service-icon-02.png" alt=""></span>
+                        Software Development
+                      </div>
+                    </div> 
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/service-icon-03.png" alt=""></span>
+                        App Development
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/service-icon-04.png" alt=""></span>
+                        Maintenance &amp; Bug Fixing
+                      </div>
+                    </div>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SERB4R84R"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-0SERB4R84R');
-    </script>
-    
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Website Development </h4>
+                                <p>We transform ideas into exceptional digital experiences. 
+                                  As a leading web development service provider, we take pride in delivering high-quality, 
+                                  tailor-made solutions that empower businesses to thrive in the digital landscape.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Planning</span>
+                                  <span><i class="fa fa-check"></i> Website Design</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span>
+                                  <span><i class="fa fa-check"></i> Maintenance and Updates</span> <span><i class="fa fa-check"></i>
+                                    Testing</span> <span><i class="fa fa-check"></i> Optimized Template</span>
+                                </div>
+
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image-04.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>App Development</h4>
+                                <p>We harness the power of technology to turn your app ideas into reality. Our team of skilled app developers, designers, 
+                                  and strategists collaborates seamlessly to deliver user-friendly and feature-rich mobile applications. 
+                                  Whether you're a startup, small business, or enterprise, we have the expertise to bring your vision to life.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Custom Mobile App Development </span>
+                                  <span><i class="fa fa-check"></i> User-Centric Design</span> <span><i class="fa fa-check"></i>
+                                    Cross-Platform Development</span>
+                                  <span><i class="fa fa-check"></i> App Maintenance and Updates</span> 
+                                </div>
+                              
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Maintenance &amp; Bug Fixing  </h4>
+                                <p>We understand the dynamic nature of the digital landscape. Our multidisciplinary team of experts excels in various domains, 
+                                  from website development and mobile app creation to ongoing support and optimization.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Maintenance and Support</span>
+                                  <span><i class="fa fa-check"></i> Bug Fixes and Optimization</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span>
+                                  <span><i class="fa fa-check"></i> End-to-End Solutions</span>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image-02.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Online Shopping &amp; Tracking ID</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor
+                                  incididunt ut labore et dolore kengan darwin doerski token.
+                                  dover lipsum lorem and the others.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span>
+                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span>
+                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor
+                                  incididunt.</p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image-04.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Enjoy &amp; Travel</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor
+                                  incididunt ut labore et dolore kengan darwin doerski token.
+                                  dover lipsum lorem and the others.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span>
+                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span>
+                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i>
+                                    SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor
+                                  incididunt.</p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/services-image.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div id="blog" class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="section-heading">
+            <h6>Recent News</h6>
+            <h4>Check Our Blog <em>Posts</em></h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+        <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="blog-post">
+            <div class="thumb">
+              <a href="/devops/jenkins.html"><img src="/assets/images/devops/jenkins/jenkins.png" alt=""></a>
+            </div>
+            <div class="down-content">
+              <span class="category"><a style="color: #fff;" href="/devops/blog.html">Devops</a></span>
+              <span class="date">26 January 2024</span>
+              <a href="/devops/jenkins.html">
+                <h4>Jenkins CI/CD pipeline is a crucial component in the ....<p style="color: blue;">Read More</p></h4></a>
+              </a>       
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="blog-posts">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="post-item">
+                  <div class="thumb">
+                    <a href="#"><img src="assets/images/blog-post-02.jpg" alt=""></a>
+                  </div>
+                  <div class="right-content">
+                    <span class="category">SEO Analysis</span>
+                    <span class="date">24 September 2021</span>
+                    <a href="#">
+                      <h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="post-item">
+                  <div class="thumb">
+                    <a href="#"><img src="assets/images/blog-post-03.jpg" alt=""></a>
+                  </div>
+                  <div class="right-content">
+                    <span class="category">SEO Analysis</span>
+                    <span class="date">24 September 2021</span>
+                    <a href="#">
+                      <h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="post-item last-post-item">
+                  <div class="thumb">
+                    <a href="#"><img src="assets/images/blog-post-04.jpg" alt=""></a>
+                  </div>
+                  <div class="right-content">
+                    <span class="category">SEO Analysis</span>
+                    <span class="date">24 September 2021</span>
+                    <a href="#">
+                      <h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <footer class="footer">
+    <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5 px-lg-5">
+        <div class="row g-5">
+          <div class="col-md-9 col-lg-3">
+            <h4 class="text-white mb-4">Gyaan Explosion</h4>
+            <!-- <img src="/assets/images/logo.png" height="100px" width="100px" alt="Gyan Explosion"> -->
+            <p class="text-white mb-4">Welcome to Gyaan Explosion Tech Insights, where I share my personal journey, discoveries, and deep dives into the world of technology. 
+              </p>
+   
+          </div>
+          <div class="col-md-9 col-lg-3">
+            <h5 class="text-white mb-4">Popular Link</h5>
+            <a class="btn btn-link" href="/">Home</a>
+            <a class="btn btn-link" href="blog.html">Blog</a>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="contact.html">Contact</a>
+          </div>
+          <div class="col-md-9 col-lg-3">
+            <h5 class="text-white mb-4">Services</h5>
+            <a class="btn btn-link" href="">Web Development</a>
+            <a class="btn btn-link" href="">Maintaince & Bug Fixing</a>
+            <!-- <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact</a> -->
+          </div>
+          <div class="col-md-9 col-lg-3">
+            <h5 class="text-white mb-4">Blog</h5>
+            <a class="btn btn-link" href="/devops/jenkins.html">Jenkins</a>
+            <!-- <a class="btn btn-link" href="">Contact Us</a>
+                  <a class="btn btn-link" href="">Privacy Policy</a>
+                  <a class="btn btn-link" href="">Terms & Condition</a>
+                  <a class="btn btn-link" href="">Career</a> -->
+          </div>
+       
+        </div>
+      </div>
+      <div class="container px-lg-5">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Gyaan Explosion</a>, All Right Reserved.
+              Designed By <a class="border-bottom" href="">Saurabh Kannaujia</a>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="index.html">Home</a>
+                <a href="privacy_plocies.html">Privacy Policy</a>
+                <!-- <a href="">Terms & Condition</a>
+                <a href="">FQAs</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SERB4R84R"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0SERB4R84R');
+  </script>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
 </body>
+
 </html>
