@@ -1467,7 +1467,7 @@ Blog
 --------------------------------------------- 
 */
 
-.blog:before {
+/* .blog:before {
   content: '';
   background-image: url(../images/blog-left-dec.jpg);
   background-repeat: no-repeat;
@@ -1477,7 +1477,7 @@ Blog
   width: 961px;
   height: 1020px;
   z-index: 0;
-}
+} */
 
 .blog {
   position: relative;
