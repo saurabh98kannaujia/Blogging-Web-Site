@@ -1005,7 +1005,7 @@ Footer Style
   position: relative;
   height: fit-content;
   padding-bottom: 0;
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: start;
 }
 
@@ -1245,4 +1245,11 @@ responsive
   }
 }
 
-
+.code-sec {
+  margin: 1rem;
+  width: fit-content;
+  padding: 1rem 3rem;
+  background: #084bc7;
+  color: #FFF;
+  border-radius: 10px;
+}

@@ -1,28 +1,5 @@
-/*
 
-TemplateMo 568 DigiMedia
 
-https://templatemo.com/tm-568-digimedia
-
-*/
-
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-10. preloader
-11. search
-12. portfolio
-
---------------------------------------------- */
 /* 
 ---------------------------------------------
 font & reset css
@@ -1204,7 +1181,18 @@ Footer Style
   border-right: none;
 }
 
+.box-desing {
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  border-radius: 25px;
+}
 
+.thumb-config {
+  height: 194px;
+  padding: 11px;
+}
+.blog-logo {
+  height: 100%;
+}
 
 
 /* 
