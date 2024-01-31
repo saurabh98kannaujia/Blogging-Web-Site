@@ -733,6 +733,10 @@ header
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+  .blog .section-heading
+    {
+      margin-top: 8rem;
+    }
 }
 
 @media (min-width: 767px) {
