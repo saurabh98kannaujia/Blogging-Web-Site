@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Gyan Explosion">
+  <meta name="author" content="Gyan Explosion">
+  <meta name="google-adsense-account" content="ca-pub-4481976863720472">
+  <meta name="google-site-verification" content="qZXgkQfeqGHMgvE9M3czhJtZNur5wARYE9u6grPeQlA" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Javascript Obfuscation</title>
+  <link rel="icon" href="/assets/images/logo.ico">
+
+  <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" /> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="/assets/css/fontawesome.css">
+  <link rel="stylesheet" href="/assets/css/blog_read.css">
+  <link rel="stylesheet" href="/assets/css/animated.css">
+  <link rel="stylesheet" href="/assets/css/owl.css">
+  <link rel="stylesheet" href="/assets/css/prism.css">
+
+  <style>
+    i {
+      color: green !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="/assets/images/logo.png" alt="Gyan Explosion">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="/index.html">Home</a></li>
+              <li class="scroll-to-section"><a href="/blog.html" class="active">Blog</a></li>
+              <li class="scroll-to-section"><a href="#">About</a></li>
+              <li class="scroll-to-section"><a href="#">Contact</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <div id="blog" class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="section-heading">
+            <h4>Javascript <em>Obfuscation</em></h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+        <div class="col-lg-12 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="blog-post">
+            <div class="down-content">
+              <span class="category">JavaScript</span>
+              <span class="date"><strong>Published at:</strong> 01 February 2024</span>
+              <h3 class="heading-txt" style="margin-top: 1rem;">Securing Your JavaScript Code: Understanding JavaScript Obfuscation</h4>
+
+                <div class="article">
+                  In web development, JavaScript files are bundled and sent to the client (browser) to be executed.
+                  Anyone with access to a browser’s developer tools can easily view, read, and even modify these JavaScript files.
+                </div>
+
+
+                <div class="detailed_blog">
+                  <h4 class="subtitle">Let’s take a look at a typical JavaScript bundle file that is sent to the client:</h2>
+                    <div class="article">
+                      <pre>
+                        <code class="language-javascript">
+                          function fetchUserData() {
+                            console.log("Fetching user data...");
+                            // API call logic here
+                          }
+                          
+                          function processUserData(data) {
+                            console.log("Processing user data...");
+                            // Data processing logic here
+                          }
+                          
+                        </code>
+                      </pre>
+                      As you can see, this file is readable and exposes the function names and logic. Anyone who inspects this file can easily understand how
+                       your application works. This creates a security risk, especially if the bundle file contains sensitive code or business logic.
+                    </div>
+                </div>
+                <div class="detailed_blog">
+                  <h2 class="subtitle">Why Do We Need JavaScript Obfuscation?</h2>
+                  <div class="article">
+                    This issue is solved by the use of JavaScript obfuscation, as it makes the code unreadable to humans and still runs 
+                    correctly in the browser. The most important reasons we need to use JavaScript obfuscation are given below:
+                    <!-- <div class="section-image">
+                      <img src="/assets/images/devops/nginx/nginx_architecture.png" alt="Nginx Architecture">
+                    </div> -->
+                    <!-- <strong>NGINX is divided into three different parts. These are</strong> -->
+                    <ul style="margin-left: 1rem;">
+                      <li>
+                        <strong>Code Theft :</strong> Once you distribute your web application, you would not wish others could copy or steal your code easily.
+                      </li>
+                      <li>
+                        <strong>Protect Sensitive Logic: </strong> If you have proprietary algorithms or important business logic, then obfuscation will help in protecting it from getting exposed.
+                      </li>
+                      <li>
+                        <strong>Mitigation of Attacks:</strong> Obfuscation can help prevent attacks by making it difficult for attackers to exploit vulnerabilities in your JavaScript code.
+
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="detailed_blog">
+                  <h2 class="subtitle">What is JavaScript Obfuscation? </h2>
+                  <div class="article">
+                    JavaScript obfuscation is the process of converting your readable JavaScript code into an unrecognizable form without 
+                    changing its functionality. It can make variable names meaningless, remove whitespace, and rearrange the code in such a 
+                    way that it becomes almost impossible to understand. Here’s an example: <br>
+
+                    Here’s an example: <br>
+                    <strong> Before: </strong>
+                    <pre>
+                      <code class="language-javascript">
+                        
+                        function greetUser(name) {
+                          console.log("Hello, " + name + "!");
+                        }
+                      
+                        greetUser("ABC");                      
+                      </code>
+                    </pre>
+                    <strong> After: </strong>
+                    <pre>
+                      <code class="language-javascript">
+                        function _0x1234(_0x5678){console['log']('Hello, '+_0x5678+'!');}_0x1234('ABC');                    
+                      </code>
+                    </pre>
+                    This still prints the same message, but if someone inspects this file, they will struggle to understand what’s happening.
+                  </div>
+
+                  <h2 class="subtitle">How Does JavaScript Obfuscation Work? </h2>
+                  <div class="article">
+                    JavaScript obfuscation typically works by:
+                    <ul style="margin-left: 1rem;">
+                      <li>
+                         <strong>variables and functions:</strong> It changes readable names into random strings like _0x1234. <br>
+                         <strong> Original Code: </strong>
+                         <pre>
+                          <code class="language-javascript">
+                            
+                            function functionName(param, param2) {
+                              var result = [param,param2];
+                              return result;
+                            }
+                                               
+                          </code>
+                        </pre>
+                        <strong> Obfuscated Code: </strong>
+                        <pre>
+                          <code class="language-javascript">
+                            function _0x12f(param, param2) {
+                              var _0x9a1 =  [param,param2];
+                              return _0x9a1;
+                            }                              
+                          </code>
+                        </pre>
+                      </li>
+                      <li>
+                         <strong>Encoding strings :</strong> It changes readable strings in the code into encoded versions, hiding them from immediate view. <br>
+                         <strong> Original Code: </strong>
+                         <pre>
+                          <code class="language-javascript">                              
+                            var greeting = "Hello World";             
+                          </code>
+                        </pre>
+                          <strong> Obfuscated Code: </strong>
+                          <pre>
+                            <code class="language-javascript">
+                              var _0x11c = String.fromCharCode(72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100);                           
+                            </code>
+                          </pre>
+                      </li>
+                      <li>
+                         <strong>Control Flow Flattening:</strong> Control flow flattening involves changing the structure of the code, rearranging the execution order to confuse code readers.<br>
+                         <strong> Original Code: </strong>
+                         <pre>
+                          <code class="language-javascript">                              
+                            if (x > 10) {
+                              console.log('Greater');
+                            } else {
+                              console.log('Smaller');
+                            }
+                                       
+                          </code>
+                        </pre>
+                          <strong> Obfuscated Code: </strong>
+                          <pre>
+                            <code class="language-javascript">
+                              switch (true) {
+                                case (x > 10):
+                                  console.log('Greater');
+                                  break;
+                                default:
+                                  console.log('Smaller');
+                              }
+                            </code>
+                          </pre>
+                      </li>
+                      <li>
+                         <strong> Dead Code Insertion:</strong> Adding code that is never executed (dead code) to make reverse engineering harder and the code bulkier.<br>
+                         <strong> Original Code: </strong>
+                         <pre>
+                          <code class="language-javascript">                              
+                            var sum = a + b;                                       
+                          </code>
+                        </pre>
+                          <strong> Obfuscated Code: </strong>
+                          <pre>
+                            <code class="language-javascript">
+                              var _0x123 = a + b;
+                              if (false) {
+                                var _0xdead = 12345;  // dead code
+                              }
+                            </code>
+                          </pre>
+                      </li>
+                      <li>
+                         <strong> Function Inlining:</strong>Functions are inlined to remove clear function boundaries and make the code look more complex.
+                         <br>
+                         <strong> Original Code: </strong>
+                         <pre>
+                          <code class="language-javascript">                              
+                            function square(x) {
+                              return x * x;
+                            }
+                                                                
+                          </code>
+                        </pre>
+                          <strong> Obfuscated Code: </strong>
+                          <pre>
+                            <code class="language-javascript">
+                              var result = (function(x) { return x * x; })(4);
+                            </code>
+                          </pre>
+                      </li>
+                      <li>
+                         <strong> Opaque Predicates:</strong>Opaque predicates are logical expressions that always evaluate to a constant value but are written in a complex way, introducing unnecessary branching.<br>
+                         <br>
+                         <strong> Original Code: </strong>
+                         <pre>
+                          <code class="language-javascript">                              
+                            if (true) {
+                              var x = 1;
+                            }                               
+                          </code>
+                        </pre>
+                          <strong> Obfuscated Code: </strong>
+                          <pre>
+                            <code class="language-javascript">
+                              if ((3 > 2 && 5 < 10)) {
+                                var x = 1;
+                              }                              
+                            </code>
+                          </pre>
+                      </li>
+                      <li>
+                         <strong> Code Splitting & Re-arranging:</strong>Breaking the code into several smaller chunks, sometimes stored in separate files, and re-arranging them can further confuse attempts to reverse-engineer the code.
+                      </li>
+                      
+                    </ul>
+                  </div>
+
+                  <h2 class="subtitle">Steps to Implement JavaScript Obfuscation:</h2>
+                  <div class="article">
+                    <ol type="1" style="margin-left: 1rem;">
+                      <li>
+                        <strong>install the Obfuscation Package: </strong> <br>
+                        Start by installing the javascript-obfuscator package as a development dependency in your Angular project: <br>
+                         <i>npm install javascript-obfuscator --save-dev </i>
+
+                      </li>
+                      <li>
+                        <strong>Create the Obfuscation Script: </strong> <br>
+                        After the <i>Angular</i> build process, you want to obfuscate certain .js files while excluding others like <i>vendor.js</i> and <i>polyfills.js</i>. <br>
+                         <strong>Note: </strong> 
+                         <ul style="margin-left: 1rem;">
+                            <li>
+                              <b>Vendor.js</b> is excluded to prevent altering trusted third-party libraries and to ensure compatibility, caching efficiency, and stability.
+                            </li>
+                            <li><b>Polyfills.js</b> is excluded to maintain browser compatibility, particularly for older browsers, and avoid potential issues related to obfuscation.</li>
+                         </ul>
+
+                         Create a script file called <i>obfuscate.js</i> in your project’s root folder. This script will handle the obfuscation for all JavaScript files in the Angular build output, except the ones you want to exclude. <br>
+                         Here’s an example of what your <i>obfuscate.js </i>file might look like: <br>
+     
+                         <pre>
+                           <code class="language-javascript">                              
+                             const fs = require('fs');
+     
+                             const path = require('path'); 
+     
+                             const javaScriptObfuscator = require('javascript-obfuscator');
+     
+                             // Specify the directory where the build files are located
+                             const distFolder = path.join(__dirname, 'dist', 'your-angular-project');
+     
+                             // Specify which files to exclude
+                             const excludeFiles = ['vendor.js', 'polyfills.js'];
+     
+                             // Function to obfuscate JavaScript files
+                             function obfuscateFile(filePath) {
+     
+                                 const fileContent = fs.readFileSync(filePath, 'utf8');
+     
+                                 const obfuscationResult = JavaScriptObfuscator.obfuscate(fileContent, {
+                                     compact: true,
+                                     controlFlowFlattening: true
+                                 });
+     
+                                 fs.writeFileSync(filePath, obfuscationResult.getObfuscatedCode(), 'utf8');
+     
+                                 console.log(`Obfuscated: ${filePath}`);
+                             }
+     
+                             // Traverse the build folder and obfuscate `.js` files except the ones excluded
+                             fs.readdirSync(distFolder).forEach(file => {
+     
+                                 const filePath = path.join(distFolder, file);
+     
+                                 if (file.endsWith('.js') && !excludeFiles.includes(file)) {
+                                     obfuscateFile(filePath);
+                                 }
+     
+                             });
+                                      
+                           </code>
+                         </pre>
+                         This script reads all the files in the Angular build output directory (><i>dist/your-angular-project</i>),
+                          checks if they are .js files, and obfuscates them unless they are in the <i>excludeFiles</i> array.
+
+                      </li>
+                     
+                      <li>
+                        <strong>Add a Script Command to <i>package.json</i></strong> <br>
+                        You want to automate the obfuscation process after the Angular build. Open your <i>package.json</i> file and add a script command to run the <i>obfuscate.js </i> file.<br>
+
+                        <pre>
+                          <code class="language-javascript">                              
+                            {
+
+                              "scripts": {
+
+                                "build": "ng build",
+
+                                "obfuscate": "node obfuscate.js",
+
+                                "build:prod": "ng build --prod && npm run obfuscate"
+
+                              }
+                              
+                            }
+                             
+                          </code>
+                        </pre>
+
+                        Now, whenever you run the <i>build:prod </i> command, the Angular project will be built, and then the obfuscation script will be executed.
+                      </li>
+
+                      <li>
+                        <strong>Build and Run Obfuscation</strong> <br>
+                        To build your Angular project for production and obfuscate the JavaScript files, run: <br>
+
+                        <i>npm run build:prod</i> <br>
+                        <b>This will:</b>
+                        <ol style="margin-left: 2rem;">
+                          <li>Build your Angular project using the <i>ng build --prod</i> command.</li>
+                          <li>Run the <i>obfuscate.js</i> script, which obfuscates the JavaScript files except for the excluded ones (<i>vendor.js</i> and <i>polyfills.js)</i>.
+                          </li>
+                        </ol>
+
+
+                      </li>
+
+                    </ol>
+        
+                  </div>               
+                </div>
+
+                <div class="detailed_blog">
+                  <h2 class="subtitle">Advantages of JavaScript Obfuscation</h2>
+                  <ul style="margin-left: 1rem;">
+                   <li>
+                    <strong>Code Security : </strong> The obfuscation hides the logic and structure of the code, so it will make it hard for attackers to exploit your application or steal code.
+                   </li>
+                   <li>
+                    <strong>Protection of Intellectual Property :</strong> It serves as protection of the unique code from getting copied; thus, it will safeguard your business logic or algorithms.
+                   </li>
+                   <li>
+                    <strong>Reduces Code Size :</strong> Most of the obfuscation tools also minify the code that reduces the file size and improves the loading performance.
+                   </li>
+                   <li>
+                    <strong>Slows Down Reverse Engineering:</strong> While not bulletproof, it is impossible to completely stop an attacker from reversing your code, but obfuscation slows it down.
+                   </li>
+                   <li>
+                    <strong>Automation:</strong> This setup allows you to automatically obfuscate your files after every production build.
+                   </li>
+                   <li>
+                    <strong>Selective Obfuscation:</strong> You can easily control which files to obfuscate and which to leave untouched (like vendor libraries or polyfills).
+                   </li>
+
+                   <li>
+                    <strong>Customization:</strong> You can adjust the obfuscation options to make the code even more secure based on your needs.
+                   </li>
+                    
+                  </ul>
+                </div>
+
+                <div class="detailed_blog">
+                  <h2 class="subtitle">Disadvantages of JavaScript Obfuscation</h2>
+                  <ul style="margin-left: 1rem;">
+                   <li>
+                    <strong>Not Folproof: </strong> The attacker's "experts" can deobfuscate your code with high-level tools, but it is much tougher.
+                   </li>
+                   <li>
+                    <strong>Debugging Nightmare: </strong> Obfuscated codes can rarely be debugged. If an error occurs in production, it is tough to trace the cause of the issue in obfuscated code.
+                   </li>
+                   <li>
+                    <strong>Performance Overhead::</strong>  Depending on how heavy the obfuscation has been, it does add some performance overhead, slowing down your code execution a little bit.
+                   </li>
+                   <li>
+                    <strong>Greater Complexity: </strong> The more you apply obfuscation, the more complex the code, which could potentially make integration and even deployment more difficult.
+                   </li> 
+                  </ul>
+                </div>
+
+                <div class="detailed_blog">
+                  <h2 class="subtitle">Conclusion:</h2>
+                  JavaScript obfuscation is a powerful technique for protecting your code from prying eyes. It hides the structure and logic of your 
+                  code, making it much more difficult for others to copy, modify, or reverse-engineer. However, it’s important to remember that obfuscation 
+                  should be part of a larger security strategy. While it adds a layer of protection, it’s not a silver bullet and should be combined with
+                   other security best practices, such as strong authentication, secure API design, and proper input validation.
+                   <br>
+                   <br>
+                  By using tools like JavaScriptObfuscator, you can easily implement obfuscation in your project and protect your JavaScript code with minimal effort.
+                  <br>
+                  <br>
+                Obfuscating JavaScript files in your Angular project adds an additional layer of security to your application. 
+                By creating a post-build obfuscation script, you ensure that sensitive or proprietary code is harder to reverse-engineer or exploit,
+                 without impacting critical files like <i>vendor.js or polyfills.js</i>.
+                </div>
+
+                <!-- <div class="line-div"></div> -->
+                <!-- <div class="after-blog-point">
+                  <div class="reference-section">
+                    <h3 class="subtitle">Know more at:- </h3>
+                    <strong>Reference</strong>: <a href="https://docs.nginx.com/">https://docs.nginx.com/</a>
+                  </div>
+                  <div class="related-point">
+                    <a href="https://docs.nginx.com/">Nginx, Web Server, Load Balacncer, Deployment</a>
+                  </div>
+                </div> -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5 px-lg-5">
+        <div class="row g-5">
+          <div class="col-md-9 col-lg-3">
+            <h4 class="text-white mb-4">Gyaan Explosion</h4>
+            <p class="text-white mb-4">Welcome to Gyaan Explosion Tech Insights, where I share my personal journey,
+              discoveries, and deep dives into the world of technology.
+            </p>
+
+          </div>
+          <div class="col-md-9 col-lg-3">
+            <h5 class="text-white mb-4">Popular Link</h5>
+            <a class="btn btn-link" href="/">Home</a>
+            <a class="btn btn-link" href="/blog.html">Blog</a>
+            <a class="btn btn-link" href="/about.html">About Us</a>
+            <a class="btn btn-link" href="/contact.html">Contact</a>
+          </div>
+          <div class="col-md-9 col-lg-3">
+            <h5 class="text-white mb-4">Services</h5>
+            <a class="btn btn-link" href="">Web Development</a>
+            <a class="btn btn-link" href="">Maintaince & Bug Fixing</a>
+          </div>
+          <div class="col-md-9 col-lg-3">
+            <h5 class="text-white mb-4">Blog</h5>
+            <a class="btn btn-link" href="/devops/blog.html">Devops</a>
+            <a class="btn btn-link" href="/javascript/blog.html">Java Script</a>
+            <a class="btn btn-link" href="/devops/jenkins.html">Jenkins</a>
+            <a class="btn btn-link" href="/devops/nginx.html">Nginx</a>
+            <a class="btn btn-link" href="/javascript/javascript_obfuscation.html">JavaScript Obfuscation</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="container px-lg-5">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Gyaan Explosion</a>, All Right Reserved.
+              Designed By <a class="border-bottom" href="">Saurabh K</a>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="/">Home</a>
+                <a href="/privacy_plocies.html">Privacy Policy</a>
+                <!-- <a href="">Terms & Condition</a>
+                <a href="">Disclaimer</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SERB4R84R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-0SERB4R84R');
+  </script>
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/owl-carousel.js"></script>
+  <script src="/assets/js/animation.js"></script>
+  <script src="/assets/js/imagesloaded.js"></script>
+  <script src="/assets/js/custom.js"></script>
+
+</body>
+
+</html>
